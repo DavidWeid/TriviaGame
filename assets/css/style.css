@@ -1,5 +1,29 @@
 html,
 body {
+  height: 100%;
   font-family: cursive, sans-serif;
   font-size: 18px;
+  background-color: dimgray;
+}
+
+#content-area {
+  background-color: lightslategray;
+  height: 66%;
+  border: 2px solid slategray;
+  box-shadow: 10px 10px 5px darkgray;
+  position: relative;
+}
+
+#title-area {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  right: 10%;
+}
+
+#button-area {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  right: 10%;
 }
