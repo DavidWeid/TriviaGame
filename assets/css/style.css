@@ -1,12 +1,18 @@
 html,
 body {
   height: 100%;
-  font-family: cursive, sans-serif;
-  font-size: 18px;
+  font-family: 'El Messiri', 'Ropa Sans', 'Chivo', 'Alegreya Sans SC', cursive, sans-serif;
+  font-size: 20px;
+  background-image: url("../images/micro-carbon.png");
   background-color: dimgray;
 }
 
+#page-title {
+    font-size: 72px;
+}
+
 #content-area {
+  background-image: url("../images/dust-scratches.png");
   background-color: lightslategray;
   height: 66%;
   border: 2px solid slategray;
@@ -15,21 +21,25 @@ body {
   overflow: hidden;
 }
 
+#start-button {
+    border: 2px solid slategray;
+}
+
 #result-img {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 .visible {
-    display: block;
+  display: block;
 }
 
 .click-me {
-    font-size: 18px;
+  font-size: 18px;
 }
 .click-me:hover {
-    background-color: ghostwhite;
+  background-color: ghostwhite;
 }
