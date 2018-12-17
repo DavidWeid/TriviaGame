@@ -6,7 +6,7 @@ var rightAnswer = 0;
 var missedAnswer = 0;
 
 // Variables for timer and interval holder
-var time = 30;
+var time = 15;
 var intervalId;
 
 // Object to hold the questions, answer choices, images, and rightAnswer index
@@ -90,7 +90,7 @@ function renderQuestion() {
     $("#result-img").attr("src", "");
 
     // Display the timer
-    $("#timer").html("Time Left: 30 seconds!");
+    $("#timer").html("Time Left: 15 seconds!");
 
     // Display the current question
     $("#question").html(questionInformation[currentQuestion].question);
@@ -199,7 +199,7 @@ function renderEndGame() {
     wrongAnswer = 0;
     rightAnswer = 0;
     missedAnswer = 0;
-    time = 30;
+    time = 15;
     $("#page-title").html("");
     renderQuestion();
 
@@ -215,17 +215,17 @@ function renderCorrect() {
     $("#question").html("Correct!");
     $("#answer-selection").html("");
     $("#result-img").attr("src", questionInformation[currentQuestion -1].image);
-    time = 30;
+    time = 15;
 
     // If there're more questions, go to the next one
     if (currentQuestion < questionInformation.length) {
 
-        setTimeout(renderQuestion, 1000 * 5);
+        setTimeout(renderQuestion, 1000 * 4);
     
     // If there're no more questions, render the end game screen
     } else if (currentQuestion === questionInformation.length) {
 
-        setTimeout(renderEndGame, 1000 * 5);
+        setTimeout(renderEndGame, 1000 * 4);
 
     }
 
@@ -236,15 +236,15 @@ function renderWrong() {
     $("#question").html("Nope!");
     $("#answer-selection").html("The correct answer was: " + questionInformation[currentQuestion -1].answerChoices[questionInformation[currentQuestion -1].rightAnswer]);
     $("#result-img").attr("src", questionInformation[currentQuestion -1].image);
-    time = 30;
+    time = 15;
 
     if (currentQuestion < questionInformation.length) {
 
-        setTimeout(renderQuestion, 1000 * 5);
+        setTimeout(renderQuestion, 1000 * 4);
     
     } else if (currentQuestion === questionInformation.length) {
 
-        setTimeout(renderEndGame, 1000 * 5);
+        setTimeout(renderEndGame, 1000 * 4);
 
     }
 
@@ -255,15 +255,15 @@ function renderTime() {
     $("#question").html("Out of Time!");
     $("#answer-selection").html("The correct answer was: " + questionInformation[currentQuestion -1].answerChoices[questionInformation[currentQuestion -1].rightAnswer]);
     $("#result-img").attr("src", questionInformation[currentQuestion -1].image);
-    time = 30;
+    time = 15;
 
     if (currentQuestion < questionInformation.length) {
 
-        setTimeout(renderQuestion, 1000 * 5);
+        setTimeout(renderQuestion, 1000 * 4);
     
     } else if (currentQuestion === questionInformation.length) {
 
-        setTimeout(renderEndGame, 1000 * 5);
+        setTimeout(renderEndGame, 1000 * 4);
 
     }
 
