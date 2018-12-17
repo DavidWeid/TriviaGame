@@ -16,61 +16,61 @@ var questionInformation = [
     question: "What town was Leonardo da Vinci bord in?",
     answerChoices: ["Tuscany", "Anghiari", "Arezzo", " Vinci"],
     rightAnswer: 3,
-    image: "assets/images/"
+    image: "assets/images/leonardo-da-vinci.jpg"
   },
   {
     question: "What is the largest fast moving consumer goods company in the world?",
     answerChoices: ["Procter & Gamble", "Pepsico", "Nestle", "Coca-Cola"],
     rightAnswer: 2,
-    image: "assets/images/"
+    image: "assets/images/nestle.png"
   },
   {
     question: "What flavor ice-cream did Baskin-Robbins release in 1969 to commemorate America's landing on the moon?",
     answerChoices: ["Lunar Cheesecake", "Cosmic Marshmallow", "Chocolate Astroid Chunks", "Galatic Fudge"],
     rightAnswer: 0,
-    image: "assets/images/"
+    image: "assets/images/lunar-cheesecake.jpg"
   },
   {
     question: "What year did Honda stop making the Honda Element?",
     answerChoices: ["2000", "2011", "2018", "2003"],
     rightAnswer: 1,
-    image: "assets/images/"
+    image: "assets/images/honda-element.jpg"
   },
   {
     question: "What two teams played in the very first Super Bowl?",
     answerChoices: ["Green Bay Packers vs Oakland Raiders", "Houston Oilers vs Minnesota Vikings", "Philadelphia Eagles vs New England Patriots", "Green Bay Packers vs Kansas City Chiefs"],
     rightAnswer: 3,
-    image: "assets/images/"
+    image: "assets/images/super-bowl.jpg"
   },
   {
     question: "Who was the fourth president of the United States?",
     answerChoices: ["Thomas Jefferson", "John Adams", "James Madison", "Benjamin Franklin"],
     rightAnswer: 2,
-    image: "assets/images/"
+    image: "assets/images/james-madison.jpg"
   },
   {
     question: "Who was the horse from Horsin' Around?",
     answerChoices: ["BoJack Horseman", "Secretariat", "Seabiscuit", "Big Brown"],
     rightAnswer: 0,
-    image: "assets/images/"
+    image: "assets/images/bojack.gif"
   },
   {
     question: "What is Nintendo's best selling game franchise?",
     answerChoices: ["Pokemon", "Super Smash Bros", "Sonic", "Super Mario"],
     rightAnswer: 3,
-    image: "assets/images/"
+    image: "assets/images/super-mario.gif"
   },
   {
     question: "What is the most disliked video on YouTube?",
     answerChoices: ["Baby (Justin Bieber)", "YouTube Rewind 2018", "Despacito", "It's Everyday Bro"],
     rightAnswer: 1,
-    image: "assets/images/"
+    image: "assets/images/youtube.gif"
   },
   {
     question: "What percentage of the cells in your body are bacteria?",
     answerChoices: ["2%", "68%", "90%", "15%"],
     rightAnswer: 2,
-    image: "assets/images/"
+    image: "assets/images/bacteria.gif"
   }
 ];
 
@@ -85,6 +85,9 @@ function renderQuestion() {
 
     // Hide page title
     $("#page-title").html("");
+
+    // Hide last image
+    $("#result-img").attr("src", "");
 
     // Display the timer
     $("#timer").html("Time Left: 30 seconds!");
@@ -184,8 +187,9 @@ function renderEndGame() {
     $("#page-title").html("All done! Here are the results!");
     $("#timer").html("");
     $("#question").html("Correct: " + rightAnswer + "<br/>" + "Incorrect: " + wrongAnswer + "<br/>" + "Unanswered: " + missedAnswer);
-    $("#start-button").attr("class", "visible");
-    $("#answer-selection").html("")
+    $("#start-button").attr("class", "visible btn mx-auto");
+    $("#answer-selection").html("");
+    $("#result-img").attr("src", "");
 
     currentQuestion = 0;
 
