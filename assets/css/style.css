@@ -14,16 +14,16 @@ body {
   position: relative;
 }
 
-#title-area {
-  position: absolute;
-  top: 15%;
-  left: 10%;
-  right: 10%;
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
 }
 
-#button-area {
-  position: absolute;
-  bottom: 25%;
-  left: 10%;
-  right: 10%;
+.click-me {
+    font-size: 18px;
+}
+.click-me:hover {
+    background-color: ghostwhite;
 }
