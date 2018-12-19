@@ -13,7 +13,7 @@ var intervalId;
 var currentQuestion = 0;
 var questionInformation = [
   {
-    question: "What town was Leonardo da Vinci bord in?",
+    question: "What town was Leonardo da Vinci born in?",
     answerChoices: ["Tuscany", "Anghiari", "Arezzo", " Vinci"],
     rightAnswer: 3,
     image: "assets/images/leonardo-da-vinci.jpg"
@@ -22,7 +22,7 @@ var questionInformation = [
     question: "What is the largest fast moving consumer goods company in the world?",
     answerChoices: ["Procter & Gamble", "Pepsico", "Nestle", "Coca-Cola"],
     rightAnswer: 2,
-    image: "assets/images/nestle.png"
+    image: "assets/images/nestle.gif"
   },
   {
     question: "What flavor ice-cream did Baskin-Robbins release in 1969 to commemorate America's landing on the moon?",

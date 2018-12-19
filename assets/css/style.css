@@ -14,11 +14,16 @@ body {
 #content-area {
   background-image: url("../images/dust-scratches.png");
   background-color: lightslategray;
-  height: 66%;
+  height: 94%;
   border: 2px solid slategray;
   box-shadow: 10px 10px 5px darkgray;
   position: relative;
   overflow: hidden;
+}
+
+#question {
+  font-size: 38px;
+  font-weight: bold;
 }
 
 #start-button {
@@ -38,8 +43,10 @@ body {
 }
 
 .click-me {
-  font-size: 18px;
+  font-size: 24px;
+  padding: 6px;
 }
 .click-me:hover {
-  background-color: ghostwhite;
+  background-color: lightgray;
+  cursor: pointer;
 }
